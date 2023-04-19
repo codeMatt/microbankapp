@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $dbconnect = DB::connection()->getPDO();
+    if(DB::connection()) {
+        return view('home');
+    } else {
+        return view('error');
+    }
+
 });
 
 Route::get('/vue', function () {
