@@ -10,7 +10,10 @@
 </head>
 <body>
     <div id="app">
-        <hello-vue />
+        <div class="bg-slate-700">
+            <h1 class="text-xl font-medium text-black">Hello there</h1>
+            <span class="space-x-4">here is some styled text</span>
+        </div>
     </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 // resources/components/HelloVue.vue
 
 <template>
-  <h1>Hello Vue!123</h1>
-  <p>This is a simple block of text following the header</p>
+  <h1 class="text-3xl font-bold underline">Hello Vue!</h1>
+  <p class="fun test">wont show</p>
 </template>
 
 <script>
