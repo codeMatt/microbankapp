@@ -38,3 +38,8 @@ The following software can be installed with the quoted terminal commands, these
  - This is required to set up a root user with a password `sudo mysql_secure_installation`
 ** php-mbstring
  - `sudo apt-get install php-mbstring`
+
+ ## Building the app
+ To build the vuejs application you need to run `npm run build`
+ To run the laravel server you need to run `php artisan serve`
+ 
