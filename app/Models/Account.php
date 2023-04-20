@@ -11,6 +11,8 @@ class Account extends Model
 
     protected $fillable = ['account_number', 'balance'];
 
+    
+
     public function user()
     {
         return $this->belongsTo(User::class);
