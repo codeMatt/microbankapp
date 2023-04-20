@@ -1,0 +1,54 @@
+// resources/components/Login.vue
+
+<template>
+  <div class="container px-4 max-w-6xl mx-auto my-8">
+    
+    <div class="w-full max-w-xl mx-auto">
+    <form class="LgnForm max-w-sm mx-auto  shadow-lg bg-white rounded-lg pt-6 pb-8 mb-4 px-8">
+      <img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto" src="https://i.imgur.com/6NEUhor.jpg">
+      <div class="MskForm">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            Username
+          </label>
+          <input class="shadow apperance-none border rounded w-full py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2">
+            Username
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-4 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+          <p class="text-red-500 text-xs italic">Please choose a password.</p>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          Sign In
+          </button>
+          <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+          Forgot Password?
+        </a>
+        </div>
+        <p class="mt-2 text-black-500 text-xs">
+          Don't have an account, <a href="#" class="text-black-700 font-bold">Create an account</a> now.
+        </p>
+        <div class="LgnSm my-4 max-w-sm text-center">
+          <h2 class="underline my-2 font-bold">Login With Social Media</h2>
+          <a href="#" class="LgnFb p-2 block bg-blue-700 rounded-sm text-white md:hover:text-black-600 my-2">
+            Sign up with Facebook
+          </a>
+          <a href="#" class="LgnFb p-2 block bg-red-700 rounded-sm text-white md:hover:text-black-600 my-2">
+            Sign up with Gmail
+          </a>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+    name: 'Login'
+}
+</script>

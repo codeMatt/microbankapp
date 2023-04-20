@@ -10,9 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="bg-slate-700">
-            <error />
-        </div>
+        <login />
     </div>
 </body>
 </html>
