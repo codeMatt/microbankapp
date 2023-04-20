@@ -142,7 +142,7 @@ return [
         'driver' => 'file',
         // 'store'  => 'redis',
     ],
-
+ 
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -211,5 +211,19 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default user
+    |--------------------------------------------------------------------------
+    |
+    | This will be used in the initial seeding to generate a user with the specific credentials.
+    |
+    */
+    'default_user' => [
+        'name' => 'admin',
+        'email' => 'admin@example.com',
+        'password' => '99999',
+    ],
 
 ];
