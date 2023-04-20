@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-slate-400 h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="bg-slate-700">
-            <h1 class="text-xl font-medium text-black">Hello there</h1>
-            <span class="space-x-4">here is some styled text</span>
-        </div>
+        <account-list />
     </div>
 </body>
 </html>

@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Account;
 use App\Models\Transaction;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,7 +21,7 @@ class DatabaseSeeder extends Seeder
         $user = new User();
         $user->name = Config::get('app.default_user.name');
         $user->email = Config::get('app.default_user.email');
-        $user->password = bcrypt(Config::get('app.default_user.password'));
+        $user->password = Config::get('app.default_user.password');
         $user->save();
 
         //generate random users
